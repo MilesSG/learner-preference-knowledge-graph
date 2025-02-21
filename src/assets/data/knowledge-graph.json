@@ -1,0 +1,514 @@
+{
+  "nodes": [
+    {
+      "id": "programming_basics",
+      "name": "编程基础",
+      "category": "core",
+      "difficulty": 1,
+      "description": "计算机编程的基本概念和原理",
+      "prerequisites": []
+    },
+    {
+      "id": "web_development",
+      "name": "Web开发",
+      "category": "track",
+      "difficulty": 2,
+      "description": "Web应用程序开发的基础知识",
+      "prerequisites": ["programming_basics"]
+    },
+    {
+      "id": "data_structures",
+      "name": "数据结构",
+      "category": "core",
+      "difficulty": 2,
+      "description": "常用数据结构的原理和实现",
+      "prerequisites": ["programming_basics"]
+    },
+    {
+      "id": "algorithms",
+      "name": "算法",
+      "category": "core",
+      "difficulty": 3,
+      "description": "基本算法设计与分析",
+      "prerequisites": ["data_structures"]
+    },
+    {
+      "id": "database",
+      "name": "数据库",
+      "category": "core",
+      "difficulty": 2,
+      "description": "数据库设计与管理",
+      "prerequisites": ["programming_basics"]
+    },
+    {
+      "id": "frontend",
+      "name": "前端开发",
+      "category": "track",
+      "difficulty": 2,
+      "description": "Web前端技术和框架",
+      "prerequisites": ["web_development"]
+    },
+    {
+      "id": "backend",
+      "name": "后端开发",
+      "category": "track",
+      "difficulty": 3,
+      "description": "服务器端开发技术",
+      "prerequisites": ["web_development", "database"]
+    },
+    {
+      "id": "machine_learning",
+      "name": "机器学习",
+      "category": "advanced",
+      "difficulty": 4,
+      "description": "机器学习基础理论和应用",
+      "prerequisites": ["algorithms", "data_structures"]
+    },
+    {
+      "id": "html_css",
+      "name": "HTML/CSS",
+      "category": "frontend",
+      "difficulty": 1,
+      "description": "Web页面结构和样式",
+      "prerequisites": ["web_development"]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "frontend",
+      "difficulty": 2,
+      "description": "Web前端脚本语言",
+      "prerequisites": ["html_css"]
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "frontend",
+      "difficulty": 3,
+      "description": "流行的前端框架",
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "frontend",
+      "difficulty": 3,
+      "description": "Facebook开发的前端框架",
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "category": "backend",
+      "difficulty": 3,
+      "description": "JavaScript运行时环境",
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "language",
+      "difficulty": 1,
+      "description": "通用编程语言",
+      "prerequisites": ["programming_basics"]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "language",
+      "difficulty": 2,
+      "description": "面向对象编程语言",
+      "prerequisites": ["programming_basics"]
+    },
+    {
+      "id": "spring",
+      "name": "Spring",
+      "category": "backend",
+      "difficulty": 3,
+      "description": "Java后端框架",
+      "prerequisites": ["java"]
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "database",
+      "difficulty": 2,
+      "description": "关系型数据库",
+      "prerequisites": ["database"]
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "database",
+      "difficulty": 2,
+      "description": "NoSQL数据库",
+      "prerequisites": ["database"]
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "database",
+      "difficulty": 2,
+      "description": "内存数据库",
+      "prerequisites": ["database"]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "tool",
+      "difficulty": 2,
+      "description": "版本控制系统",
+      "prerequisites": ["programming_basics"]
+    },
+    {
+      "id": "learning_style",
+      "name": "学习风格",
+      "category": "preference",
+      "difficulty": 1,
+      "description": "学习者的学习方式偏好",
+      "prerequisites": []
+    },
+    {
+      "id": "visual_learning",
+      "name": "视觉学习",
+      "category": "learning_style",
+      "difficulty": 1,
+      "description": "偏好通过图像、视频等视觉材料学习",
+      "prerequisites": ["learning_style"]
+    },
+    {
+      "id": "auditory_learning",
+      "name": "听觉学习",
+      "category": "learning_style",
+      "difficulty": 1,
+      "description": "偏好通过听讲、讨论等方式学习",
+      "prerequisites": ["learning_style"]
+    },
+    {
+      "id": "kinesthetic_learning",
+      "name": "动手学习",
+      "category": "learning_style",
+      "difficulty": 1,
+      "description": "偏好通过实践、操作等方式学习",
+      "prerequisites": ["learning_style"]
+    },
+    {
+      "id": "reading_learning",
+      "name": "阅读学习",
+      "category": "learning_style",
+      "difficulty": 1,
+      "description": "偏好通过阅读文本材料学习",
+      "prerequisites": ["learning_style"]
+    },
+    {
+      "id": "resource_type",
+      "name": "资源类型",
+      "category": "preference",
+      "difficulty": 1,
+      "description": "学习资源的形式分类",
+      "prerequisites": []
+    },
+    {
+      "id": "video_resource",
+      "name": "视频资源",
+      "category": "resource_type",
+      "difficulty": 1,
+      "description": "视频教程、讲座等",
+      "prerequisites": ["resource_type"],
+      "matchedStyles": ["visual_learning"]
+    },
+    {
+      "id": "text_resource",
+      "name": "文本资源",
+      "category": "resource_type",
+      "difficulty": 1,
+      "description": "电子书、文档等",
+      "prerequisites": ["resource_type"],
+      "matchedStyles": ["reading_learning"]
+    },
+    {
+      "id": "interactive_resource",
+      "name": "交互资源",
+      "category": "resource_type",
+      "difficulty": 1,
+      "description": "实验、项目等",
+      "prerequisites": ["resource_type"],
+      "matchedStyles": ["kinesthetic_learning"]
+    },
+    {
+      "id": "audio_resource",
+      "name": "音频资源",
+      "category": "resource_type",
+      "difficulty": 1,
+      "description": "播客、有声书等",
+      "prerequisites": ["resource_type"],
+      "matchedStyles": ["auditory_learning"]
+    },
+    {
+      "id": "subject_area",
+      "name": "学科领域",
+      "category": "preference",
+      "difficulty": 1,
+      "description": "学习内容的领域分类",
+      "prerequisites": []
+    },
+    {
+      "id": "programming",
+      "name": "编程开发",
+      "category": "subject",
+      "difficulty": 2,
+      "description": "编程语言和软件开发基础知识",
+      "prerequisites": []
+    },
+    {
+      "id": "data_science",
+      "name": "数据科学",
+      "category": "subject",
+      "difficulty": 3,
+      "description": "数据分析和机器学习",
+      "prerequisites": ["programming"]
+    },
+    {
+      "id": "web_dev",
+      "name": "Web开发",
+      "category": "subject",
+      "difficulty": 2,
+      "description": "Web应用开发技术和框架",
+      "prerequisites": ["programming"]
+    },
+    {
+      "id": "artificial_intelligence",
+      "name": "人工智能",
+      "category": "subject",
+      "difficulty": 4,
+      "description": "人工智能和深度学习",
+      "prerequisites": ["data_science"]
+    },
+    {
+      "id": "learning_path",
+      "name": "学习路径",
+      "category": "preference",
+      "difficulty": 1,
+      "description": "基于偏好的学习顺序推荐",
+      "prerequisites": ["learning_style", "resource_type", "subject_area"]
+    },
+    {
+      "id": "web_scraping",
+      "name": "网络爬虫",
+      "category": "core",
+      "difficulty": 3,
+      "description": "学习如何使用爬虫技术采集网络数据。",
+      "prerequisites": []
+    },
+    {
+      "id": "data_collection",
+      "name": "数据采集",
+      "category": "core",
+      "difficulty": 2,
+      "description": "掌握数据采集的基本方法和工具。",
+      "prerequisites": ["web_scraping"]
+    },
+    {
+      "id": "preference_model",
+      "name": "学习偏好模型",
+      "category": "track",
+      "difficulty": 4,
+      "description": "构建学习者的偏好模型以推荐个性化学习资源。",
+      "prerequisites": ["data_collection"]
+    },
+    {
+      "id": "path_recommendation",
+      "name": "学习路径推荐",
+      "category": "track",
+      "difficulty": 5,
+      "description": "根据学习者的偏好推荐学习路径。",
+      "prerequisites": ["preference_model"]
+    }
+  ],
+  "links": [
+    {"source": "programming_basics", "target": "web_development", "value": 1},
+    {"source": "programming_basics", "target": "data_structures", "value": 1},
+    {"source": "data_structures", "target": "algorithms", "value": 1},
+    {"source": "programming_basics", "target": "database", "value": 1},
+    {"source": "web_development", "target": "frontend", "value": 1},
+    {"source": "web_development", "target": "backend", "value": 1},
+    {"source": "database", "target": "backend", "value": 1},
+    {"source": "algorithms", "target": "machine_learning", "value": 1},
+    {"source": "data_structures", "target": "machine_learning", "value": 1},
+    {"source": "web_development", "target": "html_css", "value": 1},
+    {"source": "html_css", "target": "javascript", "value": 1},
+    {"source": "javascript", "target": "vue", "value": 1},
+    {"source": "javascript", "target": "react", "value": 1},
+    {"source": "javascript", "target": "node", "value": 1},
+    {"source": "programming_basics", "target": "python", "value": 1},
+    {"source": "programming_basics", "target": "java", "value": 1},
+    {"source": "java", "target": "spring", "value": 1},
+    {"source": "database", "target": "mysql", "value": 1},
+    {"source": "database", "target": "mongodb", "value": 1},
+    {"source": "database", "target": "redis", "value": 1},
+    {"source": "programming_basics", "target": "git", "value": 1},
+    {"source": "learning_style", "target": "visual_learning", "value": 1},
+    {"source": "learning_style", "target": "auditory_learning", "value": 1},
+    {"source": "learning_style", "target": "kinesthetic_learning", "value": 1},
+    {"source": "learning_style", "target": "reading_learning", "value": 1},
+    {"source": "resource_type", "target": "video_resource", "value": 1},
+    {"source": "resource_type", "target": "text_resource", "value": 1},
+    {"source": "resource_type", "target": "interactive_resource", "value": 1},
+    {"source": "resource_type", "target": "audio_resource", "value": 1},
+    {"source": "subject_area", "target": "programming", "value": 1},
+    {"source": "subject_area", "target": "data_science", "value": 1},
+    {"source": "programming", "target": "web_dev", "value": 1},
+    {"source": "visual_learning", "target": "video_resource", "value": 1, "type": "preference"},
+    {"source": "auditory_learning", "target": "audio_resource", "value": 1, "type": "preference"},
+    {"source": "kinesthetic_learning", "target": "interactive_resource", "value": 1, "type": "preference"},
+    {"source": "reading_learning", "target": "text_resource", "value": 1, "type": "preference"},
+    {"source": "learning_path", "target": "learning_style", "value": 1},
+    {"source": "learning_path", "target": "resource_type", "value": 1},
+    {"source": "learning_path", "target": "subject_area", "value": 1},
+    {"source": "data_science", "target": "artificial_intelligence", "value": 1},
+    { "source": "web_scraping", "target": "data_collection", "value": 1 },
+    { "source": "data_collection", "target": "preference_model", "value": 1 },
+    { "source": "preference_model", "target": "path_recommendation", "value": 1 }
+  ],
+  "resources": {
+    "programming_basics": [
+      {
+        "id": "pb_1",
+        "title": "Python编程入门",
+        "type": "video",
+        "url": "https://example.com/python-basics",
+        "duration": "2h",
+        "difficulty": "beginner"
+      },
+      {
+        "id": "pb_2",
+        "title": "Java基础教程",
+        "type": "course",
+        "url": "https://example.com/java-basics",
+        "duration": "20h",
+        "difficulty": "beginner"
+      }
+    ],
+    "web_development": [
+      {
+        "id": "wd_1",
+        "title": "Web开发基础",
+        "type": "course",
+        "url": "https://example.com/web-dev",
+        "duration": "15h",
+        "difficulty": "intermediate"
+      }
+    ],
+    "data_structures": [
+      {
+        "id": "ds_1",
+        "title": "数据结构与算法",
+        "type": "book",
+        "url": "https://example.com/dsa-book",
+        "pages": 300,
+        "difficulty": "intermediate"
+      }
+    ],
+    "javascript": [
+      {
+        "id": "js_1",
+        "title": "现代JavaScript教程",
+        "type": "course",
+        "url": "https://example.com/modern-js",
+        "duration": "30h",
+        "difficulty": "intermediate"
+      }
+    ],
+    "vue": [
+      {
+        "id": "vue_1",
+        "title": "Vue.js 3.0实战",
+        "type": "video",
+        "url": "https://example.com/vue3",
+        "duration": "25h",
+        "difficulty": "intermediate"
+      }
+    ],
+    "machine_learning": [
+      {
+        "id": "ml_1",
+        "title": "机器学习基础",
+        "type": "course",
+        "url": "https://example.com/ml-basics",
+        "duration": "40h",
+        "difficulty": "advanced"
+      }
+    ],
+    "programming": [
+      {
+        "id": "prog_1",
+        "title": "Python编程基础",
+        "type": "video",
+        "url": "https://example.com/python-basics",
+        "duration": "20小时",
+        "difficulty": "入门",
+        "description": "从零开始学习Python编程语言"
+      },
+      {
+        "id": "prog_2",
+        "title": "Java编程实践",
+        "type": "interactive",
+        "url": "https://example.com/java-practice",
+        "duration": "30小时",
+        "difficulty": "中级",
+        "description": "通过实践项目学习Java编程"
+      }
+    ],
+    "web_dev": [
+      {
+        "id": "web_1",
+        "title": "Web开发入门教程",
+        "type": "video",
+        "url": "https://example.com/web-dev",
+        "duration": "25小时",
+        "difficulty": "入门",
+        "description": "HTML、CSS和JavaScript基础"
+      },
+      {
+        "id": "web_2",
+        "title": "前端开发实战项目",
+        "type": "interactive",
+        "url": "https://example.com/frontend-project",
+        "duration": "40小时",
+        "difficulty": "中级",
+        "description": "构建响应式Web应用"
+      }
+    ],
+    "data_science": [
+      {
+        "id": "ds_1",
+        "title": "数据分析基础",
+        "type": "text",
+        "url": "https://example.com/data-analysis",
+        "duration": "15小时",
+        "difficulty": "中级",
+        "description": "使用Python进行数据分析"
+      },
+      {
+        "id": "ds_2",
+        "title": "机器学习实践",
+        "type": "interactive",
+        "url": "https://example.com/ml-practice",
+        "duration": "50小时",
+        "difficulty": "高级",
+        "description": "机器学习算法实现与应用"
+      }
+    ],
+    "artificial_intelligence": [
+      {
+        "id": "ai_1",
+        "title": "深度学习基础",
+        "type": "video",
+        "url": "https://example.com/deep-learning",
+        "duration": "35小时",
+        "difficulty": "高级",
+        "description": "神经网络和深度学习入门"
+      }
+    ]
+  }
+} 

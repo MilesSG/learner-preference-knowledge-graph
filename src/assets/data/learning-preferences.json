@@ -1,0 +1,94 @@
+{
+  "learningStyles": [
+    {
+      "id": "visual",
+      "name": "视觉学习者",
+      "description": "偏好通过图像、视频和图表学习",
+      "recommendedResources": ["video", "infographic", "diagram"]
+    },
+    {
+      "id": "auditory",
+      "name": "听觉学习者",
+      "description": "偏好通过听讲和讨论学习",
+      "recommendedResources": ["lecture", "podcast", "discussion"]
+    },
+    {
+      "id": "reading",
+      "name": "阅读学习者",
+      "description": "偏好通过阅读文本材料学习",
+      "recommendedResources": ["book", "article", "documentation"]
+    },
+    {
+      "id": "kinesthetic",
+      "name": "动手学习者",
+      "description": "偏好通过实践和动手操作学习",
+      "recommendedResources": ["project", "exercise", "simulation"]
+    }
+  ],
+  "subjects": [
+    {
+      "id": "computer_science",
+      "name": "计算机科学",
+      "topics": ["编程", "算法", "数据结构", "操作系统"]
+    },
+    {
+      "id": "web_development",
+      "name": "Web开发",
+      "topics": ["HTML", "CSS", "JavaScript", "后端开发"]
+    },
+    {
+      "id": "data_science",
+      "name": "数据科学",
+      "topics": ["统计学", "机器学习", "数据分析", "数据可视化"]
+    }
+  ],
+  "learningMethods": [
+    {
+      "id": "self_paced",
+      "name": "自定进度",
+      "description": "按照自己的节奏学习"
+    },
+    {
+      "id": "structured",
+      "name": "结构化学习",
+      "description": "按照预设的课程计划学习"
+    },
+    {
+      "id": "project_based",
+      "name": "项目式学习",
+      "description": "通过完成实际项目来学习"
+    },
+    {
+      "id": "collaborative",
+      "name": "协作学习",
+      "description": "与他人合作学习"
+    }
+  ],
+  "resourceTypes": [
+    {
+      "id": "video",
+      "name": "视频教程",
+      "format": "video"
+    },
+    {
+      "id": "course",
+      "name": "在线课程",
+      "format": "mixed"
+    },
+    {
+      "id": "book",
+      "name": "电子书",
+      "format": "text"
+    },
+    {
+      "id": "article",
+      "name": "技术文章",
+      "format": "text"
+    },
+    {
+      "id": "project",
+      "name": "实践项目",
+      "format": "interactive"
+    }
+  ]
+} 

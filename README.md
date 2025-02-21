@@ -1,4 +1,4 @@
-# learner-preference-knowledge-graph 🌟
+# 基于学习偏好的大学生个性化学习资源构建（知识图谱） 🌟
 
 欢迎来到 **learner-preference-knowledge-graph** 项目！这个项目旨在构建一个学习者偏好知识图谱，以帮助更好地理解学习者的需求和行为。
 

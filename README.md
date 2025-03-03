@@ -3,8 +3,8 @@
 一个智能的个性化学习平台，基于用户的学习偏好推荐定制化的学习路径和资源。
 
 ### 项目截屏
-![统运行截图](src\imgs\image1.png)
-![统运行截图](src\imgs\image1.png)
+![统运行截图](./src/imgs/image1.png)
+![统运行截图](./src/imgs/image1.png)
 
 ## 🌟 主要特性
 
